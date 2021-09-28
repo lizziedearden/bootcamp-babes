@@ -1,0 +1,172 @@
+.header-wrapper {
+
+    position: relative;
+
+    /* background: url(../resources/pastel.jpg) no-repeat; */
+
+    background-size: cover;
+
+    background-position: center;
+
+    height: 100vh
+
+}
+
+ 
+
+.main-info {
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    align-items: center;
+
+    display: flex;
+
+    height: 50rem
+
+}
+
+ 
+
+.main-info h1 {
+
+    color: white;
+
+}
+
+ 
+
+.typed-text {
+
+    font-size: 2rem;
+
+    color: rgb(226, 226, 226);
+
+}
+
+ 
+
+.jumbotron {
+
+    height: 100vh;
+
+    text-align: center;
+
+ 
+
+    background: linear-gradient(124deg, red, #ff2400, #00acca, #7fcdd1, rgb(255, 115, 115), #e8b71d, seagreen, #dd00f3, purple, #e81d1d);
+
+    background-size: 1800% 1800%;
+
+ 
+
+    -webkit-animation: rainbow 100s ease infinite;
+
+    -z-animation: rainbow 100s ease infinite;
+
+    -o-animation: rainbow 100s ease infinite;
+
+    animation: rainbow 100s ease infinite;
+
+    margin: 0px;
+
+}
+
+ 
+
+@-webkit-keyframes rainbow {
+
+    0% {
+
+        background-position:0% 82%
+
+    }
+
+    50% {
+
+        background-position:100% 19%
+
+    }
+
+    100% { 
+
+        background-position:0% 82%
+
+    }
+
+}
+
+ 
+
+@-moz-keyframes rainbow {
+
+    0% {
+
+        background-position:0% 82%
+
+    }
+
+    50% { 
+
+        background-position:100% 19%
+
+    }
+
+    100% { 
+
+        background-position:0% 82%
+
+    }
+
+}
+
+ 
+
+@-o-keyframes rainbow {
+
+    0% { 
+
+        background-position:0% 82%
+
+    }
+
+    50% { 
+
+        background-position:100% 19%
+
+    }
+
+    100% { 
+
+        background-position:0% 82%
+
+    }
+
+}
+
+ 
+
+@keyframes rainbow { 
+
+    0% { 
+
+        background-position:0% 82%
+
+    }
+
+    50% { 
+
+        background-position:100% 19%
+
+    }
+
+    100% { 
+
+        background-position:0% 82%
+
+    }
+}

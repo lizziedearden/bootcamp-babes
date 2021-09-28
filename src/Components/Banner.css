@@ -1,0 +1,24 @@
+div.content {
+    position: relative;
+    top: 5%;
+}
+ 
+.content {
+    background-color: white;
+    padding: 3%;
+    padding-top: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+ 
+.title {
+    font-size: 300%;
+}
+ 
+.text {
+    font-size: 150%;
+}
+ 
+.btn-outline-dark {
+    margin-top: 1.5rem;
+}

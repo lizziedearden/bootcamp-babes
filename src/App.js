@@ -2,11 +2,12 @@ import './App.css';
 import Header from './Components/Header';
 import Banner from './Components/Banner';
 import Card from './Components/Card';
+import nebula from './resources/nebula.jpeg';
 
 
 function AboutCoursesSection() {
   return (
-    <div className="container-fluid about-me">
+    <div className="container-fluid aboutCourses">
       <div className="row">
         <div className="col-sm-4" align="center">
           <Card title="Something" />

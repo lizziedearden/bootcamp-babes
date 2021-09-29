@@ -1,4 +1,5 @@
 import './App.css';
+import BootcampContainer from './Containers/BootcampContainer';
 import Header from './Components/Header';
 import Banner from './Components/Banner';
 import Card from './Components/Card';
@@ -53,6 +54,7 @@ function App() {
         <Header />
         <Banner title='Course' text='Here are the courses we have to offer...'/>
         <AboutCoursesSection />
+        <BootcampContainer />
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import React from 'react'
+import CourseList from '../Components/CourseList'
+import Course from '../Components/Course'
 
 class BootcampContainer extends React.Component{
     constructor (props) {
@@ -24,14 +26,25 @@ class BootcampContainer extends React.Component{
     }
 
     addNewCourse(newCourse){
-        
+        fetch("http://localhost:8081/api/courses",{
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newCourse)
+        })
+        const updatedCourses = [...this.state.courses, newCourse];
+        this.setState({ courses: updatedCourses });
     }
 
-    render() {
+    render(){
+
         return (
             <>
-                <h1>CoursesDB</h1>
-                <hr />
+                <h1>CinemaDB</h1>
+                <NewCourse handleCourseSubmission={this.addNewCourse}/>
+                <hr/>
+                <CourseList courses={this.state.courses}/>
             </>
         )
     }

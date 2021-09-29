@@ -1,10 +1,13 @@
 import './App.css';
+
 import BootcampContainer from './Containers/BootcampContainer';
 import Header from './Components/Header';
 import Banner from './Components/Banner';
 import Card from './Components/Card';
 import Navbar from './Components/Navbar';
 import './Components/Parallax.css'
+
+
 
 
 function AboutCoursesSection() {
@@ -47,14 +50,13 @@ function AboutCoursesSection() {
   )
 }
 
+// move to an about courses.js
+
 function App() {
   return (
     <div className="App">
-        <Navbar />
-        <Header />
-        <Banner title='Course' text='Here are the courses we have to offer...'/>
-        <AboutCoursesSection />
-        <BootcampContainer />
+        
+      <BootcampContainer />
     </div>
   );
 }

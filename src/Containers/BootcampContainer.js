@@ -1,6 +1,6 @@
 import React from 'react'
 import CourseList from '../Components/CourseList'
-import Course from '../Components/Course'
+import NewCourse from '../Components/Course'
 
 class BootcampContainer extends React.Component{
     constructor (props) {

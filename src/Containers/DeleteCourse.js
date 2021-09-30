@@ -2,9 +2,14 @@ import React from 'react';
 import axios from 'axios';
 
 export default class DeleteCourse extends React.Component {
-  state = {
-    id: '',
-  }
+    constructor(props){
+        super(props);
+
+        this.state = {
+            id: '',
+          }
+    }
+  
 
   handleChange = event => {
     this.setState({ id: event.target.value });
@@ -14,10 +19,14 @@ export default class DeleteCourse extends React.Component {
     event.preventDefault();
 
     axios.delete(`http://localhost:8081/api/courses/${this.state.id}`)
-      .then(res => {
-        console.log(res);
-        console.log(res.data);
+      .then(() => {
+        this.state = {
+            id: '',
+          }
       })
+      .then(() => {
+        this.props.getCourses();
+      }) 
   }
 
   render() {

@@ -7,10 +7,7 @@
 }
  
 /* On mouse-over, add a deeper shadow */
-.card:hover {
-    box-shadow: 0 10px 18px 0 rgb(255, 140, 159);
-}
- 
+
 .contents-card {
     padding: 5%;
 }
@@ -35,7 +32,8 @@
   
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-    transition: 1s;
+    /* transition: 1s; */
+    /* animation-fill-mode: forwards; */
   }
   
   .flip-card-front, .flip-card-back {
@@ -47,7 +45,16 @@
     
   }
 
-  .flip-card-back {
+  .flip-card-front {
+      background-color: whitesmoke;
+      color:black;
+  }
 
+  .flip-card-back {
     transform: rotateY(180deg);
+    /* animation-fill-mode: forwards; */
+  }
+
+  .card-body{
+      background-color:whitesmoke;
   }

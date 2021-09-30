@@ -3,12 +3,16 @@ import './Card.css'
 
 function Card(props) {
     return (
-        <div className="card" styles="width: 18rem;">
-             {/* <img src={props.imageSrc} className="card-img-top" alt="..." /> */}
-            <div className ="card-body">
-                <h5 className ="card-title">{props.title}</h5>
-                <p className ="card-text">{props.text}</p>
-                <a href="#" className ="btn btn-primary">{props.buttonText}</a>
+        <div class="flip-card" className="card" styles="width: 18rem;">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" className ="card-body">
+                {/* <img src={props.imageSrc} className="card-img-top" alt="..." /> */}
+                    <h5 className ="card-title">{props.title}</h5>
+                    <p className ="card-text">{props.text}</p>
+                </div>
+                <div class="flip-card-back">
+                    <p className="card-description">{props.description}</p>
+                </div>
             </div>
         </div>
     )

@@ -1,15 +1,15 @@
-// import Course from './Course'
+import Course from './Course'
 
-// const CourseList = (props) => {
-//     const courseComponents = props.courses.map((course, index) => {
-//         return <Course course={course} key={index}/>
-//     });
+const CourseList = (props) => {
+    const courseComponents = props.courses.map((course, index) => {
+        return <Course course={course} key={index}/>
+    });
 
-//     return (
-//         <>
-//             {courseComponents}
-//             </>
-//     )
-// }
+    return (
+        <>
+            {courseComponents}
+            </>
+    )
+}
 
-// export default CourseList;
+export default CourseList;

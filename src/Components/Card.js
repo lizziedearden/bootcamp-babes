@@ -9,6 +9,7 @@ function Card(props) {
                 {/* <img src={props.imageSrc} className="card-img-top" alt="..." /> */}
                     <h5 className ="card-title">{props.title}</h5>
                     <p className ="card-text">{props.text}</p>
+                    <p className ="card-text">Deadline to apply: {props.deadline}</p>
                 </div>
                 <div className="card-body flip-card-back">
                     <p className="card-description">{props.description}</p>

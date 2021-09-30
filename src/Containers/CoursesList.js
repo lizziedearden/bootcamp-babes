@@ -21,7 +21,7 @@ export default class CoursesList extends React.Component {
         <div className="row">
           {this.state.courses.map(course => 
               <div className="col-sm-4" align="center">
-                <Card title={course.name} text={course.category} description={course.description}/>
+                <Card title={course.name} text={course.category} description={course.description} deadline={course.deadline}/>
               </div>)}
         </div>
       </div>

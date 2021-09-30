@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from "react-router-dom";
+import './Navbar.css'
 
 function Navbar() {
     return (
@@ -15,6 +16,11 @@ function Navbar() {
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <button>
+                                <Link to= "/"> Home</Link>
+                                </button>
+                                </li>
+                        <li class="nav-item">
+                            <button>
                             <Link to= "/Admin" >Admin</Link>
                             </button>
                         </li>
@@ -23,6 +29,7 @@ function Navbar() {
                             <Link to= "/Signin" >User Sign-In</Link>
                             </button>
                         </li>
+                        
                     </ul>
                 </div>
             </div>

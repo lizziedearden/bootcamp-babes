@@ -1,0 +1,23 @@
+.hero{
+    background-image: url(../resources/nebula.jpeg);
+}
+.hello{
+    color:aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.link{
+    display: block;
+}
+p{
+    color:whitesmoke
+}
+.login{
+    background-color: bisque;
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.5em;
+}
+.sign-in{
+    margin-top: 0.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

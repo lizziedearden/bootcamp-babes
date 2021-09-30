@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-
+import './Signin.css'
 
 const Signin = () => {
     return(
-        <div>
+        <div className="hero">
         <Navbar/>
-        <h1>Welcome</h1>
+        <h1 className= "hello">Welcome</h1>
         <p> This is the sign in page</p>
         <div className= "sign">
             <div className= "sign-in">
@@ -19,6 +19,7 @@ const Signin = () => {
             </div>
             </div>
             <button className="login">Sign in</button>
+            <a href="#" className="link">Aren't registered sign up here</a>
         </div>
     )
 }

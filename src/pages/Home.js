@@ -41,7 +41,7 @@ class Home extends React.Component{
             <Banner title='Course' text='Here are the courses we have to offer...'/>
             <CoursesList courses={this.state.courses}/>
             <NewCourse getCourses={this.getCourses}/>
-            <DeleteCourse />
+            <DeleteCourse getCourses={this.getCourses} />
           </div>
       )
   }

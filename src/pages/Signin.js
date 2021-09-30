@@ -7,7 +7,7 @@ const Signin = () => {
         <div className="hero">
         <Navbar/>
         <h1 className= "hello">Welcome</h1>
-        <p> This is the sign in page</p>
+        <p className = "signin-p"> This is the sign in page</p>
         <div className= "sign">
             <div className= "sign-in">
                 <label htmlFor="username"></label>

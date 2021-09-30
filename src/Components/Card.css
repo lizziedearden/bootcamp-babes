@@ -32,8 +32,6 @@
   
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-    /* transition: 1s; */
-    /* animation-fill-mode: forwards; */
   }
   
   .flip-card-front, .flip-card-back {
@@ -52,7 +50,7 @@
 
   .flip-card-back {
     transform: rotateY(180deg);
-    /* animation-fill-mode: forwards; */
+    color: black;
   }
 
   .card-body{

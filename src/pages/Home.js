@@ -5,6 +5,7 @@ import Banner from "../Components/Banner";
 import Navbar  from "../Components/Navbar";
 import CoursesList from "../Containers/CoursesList"
 import NewCourse from "../Containers/NewCourse"
+import DeleteCourse from '../Containers/DeleteCourse';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
           <Banner title='Course' text='Here are the courses we have to offer...'/>
           <CoursesList />
           <NewCourse />
+          <DeleteCourse />
         </div>
     )
 }

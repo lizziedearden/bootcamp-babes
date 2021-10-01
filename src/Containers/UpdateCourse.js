@@ -1,11 +1,12 @@
 import React from 'react';
 import axios from 'axios';
 
-class NewCourse extends React.Component {
+class UpdateCourse extends React.Component {
     constructor (props){
       super(props);
 
       this.state = {
+        id: '',
         name: '',
         rating: 0,
         description: '',
@@ -18,8 +19,6 @@ class NewCourse extends React.Component {
         spacesAvailable: 0,
         signUpThrough: ''
       }
-
-
     }
     
   
@@ -44,6 +43,7 @@ class NewCourse extends React.Component {
       event.preventDefault();
   
       const course = {
+        id: this.state.id,
         name: this.state.name,
         rating: this.state.rating,
         description: this.state.description,
@@ -59,9 +59,10 @@ class NewCourse extends React.Component {
 
       console.log(course);
   
-      axios.post(`http://localhost:8081/api/courses`, course)
+      axios.put(`http://localhost:8081/api/courses`, course)
         .then(() => {
           this.setState ({
+          id: '',
           name: '',
           rating: 0,
           description: '',
@@ -83,6 +84,11 @@ class NewCourse extends React.Component {
       return (
         <div>
           <form onSubmit={this.handleSubmit}>
+          <label>
+              Course ID you want to update:
+              <input type="text" name="id" id="id" onChange={this.handleChange} />
+            </label>
+            <p>The Course Details You Want To Update</p>
             <label>
               Course Name:
               <input type="text" name="name" id="name" onChange={this.handleChange} />
@@ -155,11 +161,11 @@ class NewCourse extends React.Component {
               Course Sign Up Through:
               <input type="text" name="signUpThrough" id="signUpThrough" onChange={this.handleChange} />
             </label>
-            <button type="submit">Add</button>
+            <button type="submit">Update Course</button>
           </form>
         </div>
       )
     }
   }
   
-  export default NewCourse
+  export default UpdateCourse

@@ -35,7 +35,7 @@ class Signin extends React.Component{
                 <div className= "sign">
                     <LogIn getUsers={this.getUsers}/>
                 </div>
-                <Link to = "/profile">
+                <Link to = "/Profile">
                 <button className="login">Sign in</button></Link>
                 <Link to = "/Signup" className="link">Aren't registered sign up here</Link>
             </div>

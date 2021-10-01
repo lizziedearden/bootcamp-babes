@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class SignUpNewUser extends React.Component {
     constructor (props){
@@ -57,6 +58,7 @@ class SignUpNewUser extends React.Component {
                 <input type="text" name="password" id="password" onChange={this.handleChange} />
               </label>
               <button type="Create User">Create New User</button>
+              <Link to = "/Signin" className="redirect">Already have an account signin here</Link>
             </form>
           </div>
          

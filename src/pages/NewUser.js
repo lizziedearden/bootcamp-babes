@@ -10,13 +10,6 @@ class NewUser extends React.Component {
         email: '',
         password: ''
       }
-    //   private int id;
-    //   private String name;
-    //   private String email;
-    //   private String password;
-    //   private LocalDateTime createdAt;
-    //   private LocalDateTime updatedAt;
-    //   private LocalDateTime lastSeen;
     }
     
   
@@ -50,21 +43,32 @@ class NewUser extends React.Component {
     render() {
       return (
         <div>
-          <form onSubmit={this.handleSubmit}>
-            <label>
-              Name:
-              <input type="text" name="name" id="name" onChange={this.handleChange} />
-            </label>
-            <label>
-              Email:
-              <input type="text" name="email" id="email" onChange={this.handleChange} />
-            </label>
-            <label>
-              Password:
-              <input type="text" name="password" id="password" onChange={this.handleChange} />
-            </label>
-            <button type="Create User">Add</button>
-          </form>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Add New User</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form onSubmit={this.handleSubmit}>
+              <label>
+                Name:
+                <input type="text" name="name" id="name" onChange={this.handleChange} />
+              </label>
+              <label>
+                Email:
+                <input type="text" name="email" id="email" onChange={this.handleChange} />
+              </label>
+              <label>
+                Password:
+                <input type="text" name="password" id="password" onChange={this.handleChange} />
+              </label>
+              <button type="Create User">Save New User</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
       )
     }

@@ -1,0 +1,24 @@
+label{
+    display: block;
+    margin-top:1.5em;
+}
+.account{
+    color: aliceblue;
+} 
+input{
+    border-radius: 12px;
+}
+.signup-button{
+    margin-top: 1.5em;
+    border: 12px  rgba(102, 102, 196, 0.5);
+    background-color: rgba(102, 102, 196, 0.63);
+    box-shadow: seashell;
+}
+.redirect{
+    display: block;
+    text-decoration: none;
+    color:rgb(179, 255, 0)
+}
+.redirect:hover{
+    color:rosybrown;
+}

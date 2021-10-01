@@ -5,6 +5,7 @@ import './Signin.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Banner from '../Components/Banner';
+import LogIn from './LogIn';
 
 class Signin extends React.Component{
     constructor (props){
@@ -27,19 +28,12 @@ class Signin extends React.Component{
     render() {
         return(
             <div className="hero">
-            <Navbar/>
-            <Banner title='Welcome' text=''/>
-            <hr />
-            <p className="description"> This is the sign in page</p>
-            <div className= "sign">
-                <div className= "sign-in">
-                    <label htmlFor="username"></label>
-                    <input type="text" name="username" placeholder="username"></input>
-                </div>
-                <div className="sign-in">
-                    <label htmlFor ="password"></label>
-                    <input type="password" name="password" placeholder="password"></input>
-                </div>
+                <Navbar/>
+                <Banner title='Welcome' text=''/>
+                <hr />
+                <p className="description"> This is the sign in page</p>
+                <div className= "sign">
+                    <LogIn getUsers={this.getUsers}/>
                 </div>
                 <Link to = "/profile">
                 <button className="login">Sign in</button></Link>

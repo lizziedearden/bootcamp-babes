@@ -31,9 +31,9 @@ class NewUser extends React.Component {
       axios.post(`http://localhost:8081/api/users`, user)
         .then(() => {
           this.setState ({
-          name: '',
-          email: '',
-          password: ''})
+          name: "",
+          email: "",
+          password: ""})
         })
          .then(() => {
            this.props.getUsers();
@@ -67,7 +67,7 @@ class NewUser extends React.Component {
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       )

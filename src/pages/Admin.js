@@ -8,6 +8,9 @@ import NewUser from './NewUser';
 import CoursesListTable from './CoursesListTable';
 import DeleteCourse from '../Containers/DeleteCourse';
 import NewCourse from '../Containers/NewCourse';
+import UpdateCourse from '../Containers/UpdateCourse';
+import './AdminButton.css'
+
 
 
 
@@ -60,14 +63,14 @@ class Admin extends React.Component{
                       </button>
                     </h5>
                   </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                       <div class="card-body">
                         <UsersList users={this.state.users}/>
                       </div>
                   </div>
 
 
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#saveUserModalCenter">Add User</button>
+                  <button type="button" class="btn btn-save" data-bs-toggle="modal" data-bs-target="#saveUserModalCenter">Add User</button>
                   <div class="modal fade" id="saveUserModalCenter" tabindex="-1" role="dialog" aria-labelledby="saveUserModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
@@ -83,7 +86,7 @@ class Admin extends React.Component{
                       </div>
                     </div>
                   </div> */}
-                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#deleteUserModalCenter">Delete User</button>
+                  <button type="button" class="btn btn-delete" data-bs-toggle="modal" data-bs-target="#deleteUserModalCenter">Delete User</button>
                   <div class="modal fade" id="deleteUserModalCenter" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
@@ -102,13 +105,13 @@ class Admin extends React.Component{
                       </button>
                     </h5>
                   </div>
-                  <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                     <div class="card-body">
                       <CoursesListTable courses={this.state.courses} />
                     </div>
                   </div>
 
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#saveCourseModalCenter">Add Course</button>
+                  <button type="button" class="btn btn-save" data-bs-toggle="modal" data-bs-target="#saveCourseModalCenter">Add Course</button>
                   <div class="modal fade" id="saveCourseModalCenter" tabindex="-1" role="dialog" aria-labelledby="saveCourseModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
@@ -116,7 +119,15 @@ class Admin extends React.Component{
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#deleteCourseModalCenter">Delete Course</button>
+                  <button type="button" class="btn btn-update" data-bs-toggle="modal" data-bs-target="#updateCourseModalCenter">Update Course</button>
+                  <div class="modal fade" id="updateCourseModalCenter" tabindex="-1" role="dialog" aria-labelledby="updateCourseModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <UpdateCourse getCourse={this.getCourses}/>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-delete" data-bs-toggle="modal" data-bs-target="#deleteCourseModalCenter">Delete Course</button>
                   <div class="modal fade" id="deleteCourseModalCenter" tabindex="-1" role="dialog" aria-labelledby="deleteCourseModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">

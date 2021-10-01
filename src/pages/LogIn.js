@@ -1,5 +1,15 @@
 import React from 'react';
 import axios from 'axios';
+import './LogIn.css';
+import { Link } from 'react-router-dom';
+import {
+ 
+  Container,
+  Row,
+  Col,
+  Form,
+  FormControl
+} from "react-bootstrap";
 
 class LogIn extends React.Component {
     constructor (props){
@@ -39,19 +49,40 @@ class LogIn extends React.Component {
   
     render() {
       return (
-        <div>
-          <form onSubmit={this.handleSubmit}>
-            <label>
-              Email:
-              <input type="text" name="email" id="email" onChange={this.handleChange} />
-            </label>
-            <label>
-              Password:
-              <input type="text" name="password" id="password" onChange={this.handleChange} />
-            </label>
-            <button type="Log in">Sign In</button>
-          </form>
-        </div>
+        <Container className="box">
+        <Row>
+          <Col md="4">
+          <Form onSubmit={this.handleSubmit}>
+          <Form.Group controlId="emailId">
+                <Form.Label>email</Form.Label>
+                <Form.Control
+                  type="text"
+                  name="email"
+                  placeholder="Enter email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                />
+                <FormControl.Feedback type="invalid"></FormControl.Feedback>
+              </Form.Group>
+              <Form.Group controlId="passwordId">
+                <Form.Label>Your password</Form.Label>
+                <Form.Control
+                  type="password"
+                  name="password"
+                  placeholder="Enter password"
+                  value={this.password}
+                 onChange={this.handleChange}
+                />
+                <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
+              </Form.Group>
+              
+              <Link to = "/profile">
+                <button  className="sigin-button" type="login">Sign in</button></Link>
+                <Link to = "/Signup" className="link">Aren't registered sign up here</Link>
+          </Form>
+          </Col>
+          </Row>
+          </Container>
       )
     }
   }

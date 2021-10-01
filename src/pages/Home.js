@@ -8,6 +8,7 @@ import NewCourse from "../Containers/NewCourse"
 import DeleteCourse from '../Containers/DeleteCourse';
 import axios from 'axios';
 import UpdateCourse from '../Containers/UpdateCourse';
+import Card from '../Components/Card.js';
 
 
 class Home extends React.Component{
@@ -33,6 +34,7 @@ class Home extends React.Component{
           this.setState({ courses });
         })
   }
+  
 
   render() {
       return (
@@ -41,9 +43,7 @@ class Home extends React.Component{
             <Header />
             <Banner title='Courses' text='Have a browse through the the courses we have to offer...'/>
             <CoursesList courses={this.state.courses}/>
-            <NewCourse getCourses={this.getCourses}/>
-            <DeleteCourse getCourses={this.getCourses} />
-            <UpdateCourse getCourses={this.getCourses} />
+
           </div>
       )
   }

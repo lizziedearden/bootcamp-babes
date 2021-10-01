@@ -7,6 +7,7 @@ import CoursesList from "../Containers/CoursesList"
 import NewCourse from "../Containers/NewCourse"
 import DeleteCourse from '../Containers/DeleteCourse';
 import axios from 'axios';
+import UpdateCourse from '../Containers/UpdateCourse';
 
 
 class Home extends React.Component{
@@ -42,6 +43,7 @@ class Home extends React.Component{
             <CoursesList courses={this.state.courses}/>
             <NewCourse getCourses={this.getCourses}/>
             <DeleteCourse getCourses={this.getCourses} />
+            <UpdateCourse getCourses={this.getCourses} />
           </div>
       )
   }

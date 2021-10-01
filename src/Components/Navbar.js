@@ -15,10 +15,11 @@ function Navbar() {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
+
                             <button className="btn">
                                 <Link to= "/" className="btn-color"> Home</Link>
-                                </button>
-                                </li>
+                              </button>
+                        </li>
                         <li class="nav-item">
                             <button className="btn">
                             <Link to= "/Admin" className="btn-color">Admin</Link>

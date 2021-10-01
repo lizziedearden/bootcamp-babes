@@ -6,7 +6,7 @@ function Header() {
         <div className='header-wrapper'>
             <div className="main-info jumbotron">
                 <h1>Bootcamp.io</h1>
-                <p>This is a little bit of info about what we do here at Bootcamp.io</p>
+                <p>Scroll down to find out a little bit more about what we do here at Bootcamp.io</p>
             </div>
         </div>
     )

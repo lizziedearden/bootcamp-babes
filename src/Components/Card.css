@@ -45,14 +45,18 @@
 
   .flip-card-front {
       background-color: whitesmoke;
-      color:black;
+      color:rgb(3, 3, 3)
   }
 
   .flip-card-back {
     transform: rotateY(180deg);
-    color: black;
+    color: rgb(12, 12, 12);
   }
 
   .card-body{
-      background-color:whitesmoke;
+    background: rgba(245, 237, 237, 0.521);
+      opacity: 80px;
+      border: double whitesmoke;
+      border-radius: 15px;
   }
+

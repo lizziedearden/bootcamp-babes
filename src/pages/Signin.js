@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar'
 import './Signin.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Banner from '../Components/Banner';
 
 class Signin extends React.Component{
     constructor (props){
@@ -27,7 +28,8 @@ class Signin extends React.Component{
         return(
             <div className="hero">
             <Navbar/>
-            <h1 className= "hello">Welcome</h1>
+            <Banner title='Welcome' text=''/>
+            <hr />
             <p className="description"> This is the sign in page</p>
             <div className= "sign">
                 <div className= "sign-in">

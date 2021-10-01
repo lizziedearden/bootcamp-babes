@@ -4,6 +4,7 @@ import './Banner.css'
 function Banner(props) {
     return (
         <div className='content'>
+            <div className="bgcolour">
             <span className="title">
                 {props.title}
             </span>
@@ -11,6 +12,7 @@ function Banner(props) {
             <span className="text">
                 {props.text}
             </span>
+            </div>
         </div>
     )
 }

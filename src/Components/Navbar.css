@@ -1,0 +1,17 @@
+ .navbar.navbar-expand-lg.navbar-light.bg-light .container-fluid{
+    
+    background-image: url("../Resources/Space.jpeg");
+}
+
+
+
+.btn-color{
+    border-radius: 12px;
+    color: rgba(220, 235, 220, 0.774) !important;
+    text-decoration: none;
+} 
+
+#navbar{
+    background:transparent;
+    color: rgba(220, 235, 220, 0.774) !important;
+}

@@ -38,7 +38,7 @@ class Home extends React.Component{
           <div>
             <Navbar/> 
             <Header />
-            <Banner title='Course' text='Here are the courses we have to offer...'/>
+            <Banner title='Courses' text='Have a browse through the the courses we have to offer...'/>
             <CoursesList courses={this.state.courses}/>
             <NewCourse getCourses={this.getCourses}/>
             <DeleteCourse getCourses={this.getCourses} />

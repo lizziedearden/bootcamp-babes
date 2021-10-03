@@ -54,7 +54,7 @@
   }
 
   .card-body{
-    background: rgba(245, 237, 237, 0.521);
+    background: rgba(245, 237, 237, 0.637);
       opacity: 80px;
       border: double whitesmoke;
       border-radius: 15px;
@@ -63,5 +63,18 @@
   .modal-styling{
     background: transparent;
     border: none;
+  }
+
+  .card-title{
+    font-size: 180%;
+    text-shadow: -1px -1px 0 rgb(192, 163, 163), 1px -1px 0 rgb(23, 43, 219), -1px 1px 0 #000, 1px 1px 0 #000;
+    vertical-align: middle;
+    margin-top: 25%;
+  }
+
+  .card-deadline{
+    margin-bottom: 5%;
+    text-shadow: -1px -1px 0 rgb(124, 119, 119), 1px -1px 0 rgb(43, 39, 39), -1px 1px 0 rgb(201, 200, 200), 1px 1px 0 rgb(107, 107, 107);
+    
   }
 

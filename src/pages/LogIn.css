@@ -1,0 +1,17 @@
+.sign-in{
+    display: block;
+}
+.sigin-button{
+    margin-top:1.5em;
+    color: white;
+    background-color: rgb(85, 55, 124);
+    border-radius:12px;
+    border: 2px solid rgb(64, 41, 95);
+    box-shadow: 0 8px 16px 0 white, 
+}
+.link{
+    display: block;
+    text-decoration: none;
+    color:rgb(179, 255, 0)
+
+}

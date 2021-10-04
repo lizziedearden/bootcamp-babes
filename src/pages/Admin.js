@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import axios from 'axios';
@@ -150,4 +151,3 @@ class Admin extends React.Component{
   }
   
   export default Admin
-  

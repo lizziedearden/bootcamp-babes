@@ -19,7 +19,7 @@ function App() {
           <Route path= '/Signin' component={Signin}/>
           <Route path ='/Admin' component= {Admin}/>
           <Route path ='/Signup' component={Signup}/>
-          <Route path ='/Profile' component={Profile}/>
+          <Route path = '/Profile' component={Profile}/>
          </Switch> 
          
     </div>

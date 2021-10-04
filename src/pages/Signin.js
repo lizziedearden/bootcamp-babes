@@ -31,13 +31,12 @@ class Signin extends React.Component{
                 <Navbar/>
                 <Banner title='Welcome' text=''/>
                 <hr />
-                <p className="description"> This is the sign in page</p>
                 <div className= "sign">
                     <LogIn getUsers={this.getUsers}/>
                 </div>
-                <Link to = "/Profile">
+                {/* <Link to = "/Profile">
                 <button className="login">Sign in</button></Link>
-                <Link to = "/Signup" className="link">Aren't registered sign up here</Link>
+                <Link to = "/Signup" className="link">Aren't registered sign up here</Link> */}
             </div>
         )
     }

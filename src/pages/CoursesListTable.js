@@ -46,4 +46,3 @@ export default class CoursesListTable extends React.Component {
 
     )}
 }
-

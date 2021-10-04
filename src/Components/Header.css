@@ -30,11 +30,14 @@
 
 }
 
- 
+ hr{
+     color: transparent;
+ }
 
 .main-info h1 {
 
     color: white;
+    font-weight: bolder;
     font-size: 6rem;
 
 }
@@ -60,7 +63,7 @@
 
     background-attachment: fixed;
 
-    background-size: 100%;
+    background-size: cover;
 
     background-repeat: no-repeat;
 

@@ -13,10 +13,6 @@ class Profile extends React.Component{
             <Navbar/>
             <p className="userProfile"> Welcome to your user profile</p>
             <button className="myCourses">View my courses</button>
-            
-            
-            
-    
             <hr />
             <button className="wishlist">View my wishlist</button>
             

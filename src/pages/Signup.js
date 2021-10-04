@@ -1,4 +1,7 @@
+// import React from "react"
+
 import React, { Component } from "react";
+import Banner from "../Components/Banner";
 import { Link } from "react-router-dom";
 import SignUpNewUser from './SignUpNewUser'
 import {
@@ -41,6 +44,7 @@ class Signup extends Component {
     return (
       <div>
         <Navbar />
+        <Banner title='Sign up' text='Make the most of Bootcamp.io by creating a profile with us!'/>
         <SignUpNewUser getUsers={this.getUsers}/>
       </div>
     )
@@ -49,4 +53,3 @@ class Signup extends Component {
   
 
 export default Signup;
-

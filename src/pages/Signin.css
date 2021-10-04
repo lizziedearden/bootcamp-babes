@@ -1,5 +1,6 @@
 body{
-    background-image: url(../Resources/nebula.jpeg);
+    background-image: url(../Resources/login-page.jpeg);
+    background-size: cover;
 }
 .hello{
     color:aliceblue;
@@ -21,3 +22,66 @@ body{
     margin-top: 0.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.description{
+    color: whitesmoke;
+    margin-bottom: 5%;
+    text-shadow: -1px -1px 0 rgb(124, 119, 119), 1px -1px 0 rgb(43, 39, 39), -1px 1px 0 rgb(201, 200, 200), 1px 1px 0 rgb(107, 107, 107);
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+form {
+    position: center;
+    z-index: 1;
+    /* background: #FFFFFF; */
+    max-width: 290px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+.Email_login{
+    color:whitesmoke;
+    /* padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-evenly; */
+ font-weight: bold; 
+ display: block; 
+ width: 150px; 
+}
+div .hero{
+    background-color: transparent;
+}
+
+input .email_input{
+    text-align: center;
+    border-style: double;
+
+}
+/* body{
+    background-image: url(../Resources/nebula.jpeg);
+}
+.hello{
+    color:aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.link{
+    display: block;
+}
+.signin-p{
+    color:whitesmoke
+}
+.login{
+    background-color: bisque;
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.5em;
+}
+.sign-in{
+    margin-top: 0.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */

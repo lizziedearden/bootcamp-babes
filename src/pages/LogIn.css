@@ -9,6 +9,10 @@
     border: 2px solid rgb(64, 41, 95);
     box-shadow: 0 8px 16px 0 white, 
 }
+.signin-font{
+    color:white;
+    font-weight: bolder;
+}
 .link{
     display: block;
     text-decoration: none;

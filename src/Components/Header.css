@@ -30,7 +30,9 @@
 
 }
 
- 
+ hr{
+     color: transparent;
+ }
 
 .main-info h1 {
 
@@ -61,7 +63,7 @@
 
     background-attachment: fixed;
 
-    background-size: 100%;
+    background-size: cover;
 
     background-repeat: no-repeat;
 

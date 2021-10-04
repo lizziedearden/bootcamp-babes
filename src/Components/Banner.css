@@ -14,11 +14,12 @@ div.content {
  
 .title {
     font-size: 50px;
+    color:whitesmoke;
 }
 
-.bgcolour{
+/* .bgcolour{
     background-image: url("../Resources/Space.jpeg");
-}
+} */
  
 .text {
     font-size: 150%;

@@ -1,0 +1,27 @@
+.here{
+    color: aliceblue;
+}
+.sign-into{
+    display: block;
+}
+.create{
+    display:block;
+}
+form{
+    margin-top: 2.5em;
+}
+.signup-button{
+    margin-top:1.5em;
+    color: white;
+    background-color: rgb(85, 55, 124);
+    border-radius:12px;
+    border: 2px solid rgb(64, 41, 95);
+    
+}
+.box{
+    position: absolute;
+    left:450px;
+}
+.mt-2{
+    color: cornsilk;
+}

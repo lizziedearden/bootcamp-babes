@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './SignUpNewUser.css'
 
 class SignUpNewUser extends React.Component {
     constructor (props){
@@ -43,21 +44,22 @@ class SignUpNewUser extends React.Component {
   
     render() {
         return (
+
           <div>
             <form onSubmit={this.handleSubmit}>
-              <label>
-                Name:
-                <input type="text" name="name" id="name" onChange={this.handleChange} />
+              <label className="signup-font">
+                Name
+                <input type="text" name="name" id="name" placeholder="Enter a name..." onChange={this.handleChange} />
               </label>
-              <label>
-                Email:
-                <input type="text" name="email" id="email" onChange={this.handleChange} />
+              <label className="signup-font">
+                Email
+                <input type="text" name="email" id="email" placeholder="Enter email..." onChange={this.handleChange} />
               </label>
-              <label>
-                Password:
-                <input type="text" name="password" id="password" onChange={this.handleChange} />
+              <label className="signup-font">
+                Password
+                <input type="password" name="password" id="password" placeholder="Enter a password..." onChange={this.handleChange} />
               </label>
-              <button type="Create User">Create New User</button>
+              <button className="signup-button" type="Create User">Create New User</button>
               <Link to = "/Signin" className="redirect">Already have an account signin here</Link>
             </form>
           </div>

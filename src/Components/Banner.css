@@ -4,10 +4,11 @@ div.content {
 }
  
 .content {
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-image: url("../Resources/StarrySky.jpeg");
     padding-top: 4px;
     padding-bottom: 4px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(253, 250, 250, 0.986), 0 6px 20px 0 rgba(247, 247, 247, 0.719);
     text-align: center;
     color: whitesmoke;
 }
@@ -18,7 +19,7 @@ div.content {
 }
 
 /* .bgcolour{
-    background-image: url("../Resources/Space.jpeg");
+    background-image: url("../Resources/StarrySky.jpeg");
 } */
  
 .text {

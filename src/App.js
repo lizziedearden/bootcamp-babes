@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="App">
        
-
          <Switch>
           <Route path = '/'  component={Home} exact/>
           <Route path= '/Signin' component={Signin}/>
@@ -23,9 +22,6 @@ function App() {
          </Switch> 
          
     </div>
-  
-
-
   );
 }
 

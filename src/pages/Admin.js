@@ -2,18 +2,16 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import axios from 'axios';
-import UsersList from './UsersList';
+import UsersList from '../Components/UsersList';
 import Banner from '../Components/Banner';
-import DeleteUser from '../pages/DeleteUser';
-import NewUser from './NewUser';
-import CoursesListTable from './CoursesListTable';
-import DeleteCourse from '../Containers/DeleteCourse';
-import NewCourse from '../Containers/NewCourse';
-import UpdateCourse from '../Containers/UpdateCourse';
+import DeleteUser from '../Components/DeleteUser';
+import NewUser from '../Components/NewUser';
+import UpdateUser from '../Components/UpdateUser';
+import CoursesListTable from '../Components/CoursesListTable';
+import DeleteCourse from '../Components/DeleteCourse';
+import NewCourse from '../Components/NewCourse';
+import UpdateCourse from '../Components/UpdateCourse';
 import './AdminButton.css'
-
-
-
 
 class Admin extends React.Component{
     constructor (props){
@@ -69,8 +67,6 @@ class Admin extends React.Component{
                         <UsersList users={this.state.users}/>
                       </div>
                   </div>
-
-
                   <button type="button" class="btn btn-save" data-bs-toggle="modal" data-bs-target="#saveUserModalCenter">Add User</button>
                   <div class="modal fade" id="saveUserModalCenter" tabindex="-1" role="dialog" aria-labelledby="saveUserModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -79,14 +75,14 @@ class Admin extends React.Component{
                       </div>
                     </div>
                   </div>
-                  {/* <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateUserModalCenter">Update User</button>
+                  <button type="button" class="btn btn-update" data-bs-toggle="modal" data-bs-target="#updateUserModalCenter">Update User</button>
                   <div class="modal fade" id="updateUserModalCenter" tabindex="-1" role="dialog" aria-labelledby="updateUserModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <UpdateUser getUsers={this.getUsers}/>
                       </div>
                     </div>
-                  </div> */}
+                  </div>
                   <button type="button" class="btn btn-delete" data-bs-toggle="modal" data-bs-target="#deleteUserModalCenter">Delete User</button>
                   <div class="modal fade" id="deleteUserModalCenter" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -138,13 +134,6 @@ class Admin extends React.Component{
                   </div>
                 </div>
               </div>
-
-              {/* <UsersList users={this.state.users}/>
-              <DeleteUser getUsers={this.getUsers} />
-              <NewUser getUsers={this.getUsers} /> 
-              <NewCourse getCourses={this.getCourses}/>
-            </>
-        <UpdateCourse getCourses={this.getCourses} /> */}
             </div>
         )
     }

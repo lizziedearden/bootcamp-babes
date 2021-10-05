@@ -3,11 +3,11 @@ import '../Components/Parallax.css'
 import Header from "../Components/Header";
 import Banner from "../Components/Banner";
 import Navbar  from "../Components/Navbar";
-import CoursesList from "../Containers/CoursesList"
-import NewCourse from "../Containers/NewCourse"
-import DeleteCourse from '../Containers/DeleteCourse';
+import CoursesList from "../Components/CoursesList"
+import NewCourse from "../Components/NewCourse"
+import DeleteCourse from '../Components/DeleteCourse';
 import axios from 'axios';
-import UpdateCourse from '../Containers/UpdateCourse';
+import UpdateCourse from '../Components/UpdateCourse';
 
 
 class Home extends React.Component{

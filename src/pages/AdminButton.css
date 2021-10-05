@@ -1,5 +1,5 @@
 .btn-save {
-    background-color: #141B4D;
+    background-color: #6d597a;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -10,7 +10,7 @@
 }
 
 .btn-delete {
-    background-color: #56B7E6;
+    background-color: #b56576;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -21,7 +21,7 @@
 }
 
 .btn-update {
-    background-color: #90E0EF;
+    background-color: #eaac8b;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -29,4 +29,23 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+.btn-get {
+    background-color: #e56b6f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.btn-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+.btn-link:hover {
+    color: #e56b6f;
 }

@@ -24,19 +24,6 @@ class UpdateCourse extends React.Component {
   
     handleChange = (event) => {
       this.setState( { [event.target.id]: event.target.value } )
-
-      // this.setState({ name: event.target.value, 
-      //     rating: event.target.value,
-      //     description: event.target.value,
-      //     category: event.target.value,
-      //     subcategory: event.target.value,
-      //     cost: event.target.value,
-      //     deadline: event.target.value,
-      //     location: event.target.value,
-      //     place: event.target.value,
-      //     spacesAvailable: event.target.value,
-      //     signUpThrough: event.target.value
-      //  })
     }
   
     handleSubmit = event => {

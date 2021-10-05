@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import Banner from "../Components/Banner";
 import { Link } from "react-router-dom";
-import SignUpNewUser from './SignUpNewUser'
+import SignUpNewUser from '../Components/SignUpNewUser'
 import {
  
   Container,

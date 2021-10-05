@@ -45,7 +45,7 @@
 
   .flip-card-front {
       background-color: whitesmoke;
-      color:rgb(3, 3, 3)
+      color:rgb(3, 3, 3);
   }
 
   .flip-card-back {
@@ -67,14 +67,17 @@
 
   .card-title{
     font-size: 180%;
-    text-shadow: -1px -1px 0 rgb(192, 163, 163), 1px -1px 0 rgb(23, 43, 219), -1px 1px 0 #000, 1px 1px 0 #000;
-    vertical-align: middle;
-    margin-top: 25%;
+    text-shadow: -1px -1px 0 rgb(153, 137, 137), 1px -1px 0 rgb(176, 178, 201), -1px 1px 0 #000, 1px 1px 0 #000;
+    vertical-align: middle; 
   }
 
   .card-deadline{
     margin-bottom: 5%;
     text-shadow: -1px -1px 0 rgb(124, 119, 119), 1px -1px 0 rgb(43, 39, 39), -1px 1px 0 rgb(201, 200, 200), 1px 1px 0 rgb(107, 107, 107);
     
+  }
+
+  .centerText{
+  display: inline-block;
   }
 

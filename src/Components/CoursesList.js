@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../Components/Card'
+import Card from './Card'
 import axios from 'axios';
 
 export default class CoursesList extends React.Component {

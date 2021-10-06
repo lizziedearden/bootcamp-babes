@@ -5,7 +5,7 @@ import './Signin.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Banner from '../Components/Banner';
-import LogIn from './LogIn';
+import LogIn from '../Components/LogIn';
 
 class Signin extends React.Component{
     constructor (props){
